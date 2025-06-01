@@ -62,7 +62,7 @@ pip install uv
 #### 2. Clone and Setup Project
 ```bash
 # Clone the repository
-git clone <https://github.com/pinkupik/ImageToSudoku.git>
+git clone https://github.com/pinkupik/ImageToSudoku.git
 cd motustom
 git checkout semestral
 
@@ -76,7 +76,7 @@ uv pip install -r requirements.txt #It will take longer than regular because of 
 
 ```bash
 # Clone the repository
-git clone <https://github.com/pinkupik/ImageToSudoku.git>
+git clone https://github.com/pinkupik/ImageToSudoku.git
 cd motustom
 git checkout semestral
 
