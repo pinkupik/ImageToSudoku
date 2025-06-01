@@ -7,7 +7,6 @@ and convert them into numerical matrices using PaddleOCR for text recognition.
 """
 import numpy as np
 from numpy._typing._array_like import NDArray
-from paddleocr import PaddleOCR
 import cv2
 
 
@@ -32,6 +31,7 @@ def scan_table(image_path: str) -> np.ndarray:
           consecutive columns
         - Detected text outside the 9x9 grid boundaries is ignored
     """
+    from paddleocr import PaddleOCR
     ocr = PaddleOCR(use_textline_orientation=False, lang='en',
                     text_detection_model_dir="app/official_models/PP-OCRv5_mobile_det",
                     text_recognition_model_dir="app/official_models/PP-OCRv5_mobile_rec",
