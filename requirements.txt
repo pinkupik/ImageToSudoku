@@ -1,0 +1,23 @@
+# Computer Vision and Image Processing
+opencv-python==4.11.0.86
+
+# OCR and Text Recognition
+paddleocr==3.0.0
+paddlepaddle==3.0.0
+
+# Numerical Computing and Data Analysis
+numpy==1.26.4
+
+# Visualization
+matplotlib==3.10.0
+
+# Testing Framework
+pytest
+pytest-cov
+
+# Development Tools
+pylint
+setuptools
+
+# Web Framework (if using Streamlit interface)
+streamlit==1.45.1
