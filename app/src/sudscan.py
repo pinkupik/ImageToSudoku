@@ -71,7 +71,10 @@ def scan_table(image_path: str) -> np.ndarray:
             if col < 0 or col >= 9 or row < 0 or row >= 9:
                 continue
             # Handle multiple digits in text
-            digits = [char for char in text[0] if char.isdigit()]
+            try:
+                digits = [char for char in text[0] if char.isdigit()]
+            except IndexError:
+                continue
 
             for i, digit in enumerate(digits):
                 target_col = col + i
