@@ -3,6 +3,7 @@ opencv-python==4.11.0.86
 
 # OCR and Text Recognition
 paddleocr==3.0.1
+paddlepaddle
 
 # Numerical Computing and Data Analysis
 numpy==1.26.4
