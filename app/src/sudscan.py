@@ -36,7 +36,7 @@ def scan_table(image_path: str) -> np.ndarray:
                     text_detection_model_dir="app/official_models/PP-OCRv5_mobile_det",
                     text_recognition_model_dir="app/official_models/PP-OCRv5_mobile_rec",
                     doc_orientation_classify_model_dir="app/official_models/PP-LCNet_x1_0_doc_ori",
-                    text_line_orientation_model_dir="app/official_models/PP-LCNet_x0_25_textline_ori",
+                    textline_orientation_model_dir="app/official_models/PP-LCNet_x0_25_textline_ori",
                     doc_unwarping_model_dir="app/official_models/UVDoc")  # Initialize OCR model
     # Initialize empty Sudoku matrix
     sudoku_matrix = np.zeros((9, 9), dtype=int)
