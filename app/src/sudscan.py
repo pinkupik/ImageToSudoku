@@ -32,8 +32,8 @@ def scan_table(image_path: str) -> np.ndarray:
     """
     from paddleocr import PaddleOCR
     ocr = PaddleOCR(use_textline_orientation=False, lang='en',
-                    text_detection_model_dir="app/official_models/PP-OCRv5_mobile_det",
-                    text_recognition_model_dir="app/official_models/PP-OCRv5_mobile_rec",
+                    text_detection_model_dir="app/official_models/PP-OCRv5_server_det",
+                    text_recognition_model_dir="app/official_models/PP-OCRv5_server_rec",
                     doc_orientation_classify_model_dir="app/official_models/PP-LCNet_x1_0_doc_ori",
                     textline_orientation_model_dir="app/official_models/PP-LCNet_x0_25_textline_ori",
                     doc_unwarping_model_dir="app/official_models/UVDoc")  # Initialize OCR model
